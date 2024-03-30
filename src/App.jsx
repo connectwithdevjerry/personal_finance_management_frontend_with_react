@@ -1,50 +1,50 @@
-// // src/App.js
-// // import React from 'react';
-// import { Route, Routes } from 'react-router-dom';
-// import { ToastContainer } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
-// import Login from './pages/Login';
-// import 'tailwindcss/tailwind.css';
-// import './index.css';
-// import './App.css'
-// import Register from './pages/Register';
-// import Home from './pages/Home';
-// import ExpensesTracking from './pages/ExpensesTracking';
-// import IncomePage from './pages/IncomePage';
-// import BudgetAndGoals from './pages/BudgetAndGoals';
-// import Dashboard from './pages/Dashboard';
-// import LandingPage from './pages/LandingPage';
+// src/App.js
+// import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Login from './pages/Login';
+import 'tailwindcss/tailwind.css';
+import './index.css';
+import './App.css'
+import Register from './pages/Register';
+import Home from './pages/Home';
+import ExpensesTracking from './pages/ExpensesTracking';
+import IncomePage from './pages/IncomePage';
+import BudgetAndGoals from './pages/BudgetAndGoals';
+import Dashboard from './pages/Dashboard';
+import LandingPage from './pages/LandingPage';
 
-// const App = () => {
-//   return (
-//     <div>
+const App = () => {
+  return (
+    <div>
 
-// <ToastContainer
-//         position="top-right"
-//         autoClose={4000}
-//         hideProgressBar={false}
-//         newestOnTop={false}
-//         closeOnClick
-//         rtl={false}
-//         pauseOnFocusLoss
-//         draggable
-//         pauseOnHover
-//         limit={2}
-//         theme="light"
-//       />
+<ToastContainer
+        position="top-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        limit={2}
+        theme="light"
+      />
 
-//       <Routes>
-//         <Route path='/' element={<LandingPage/>}/>
-//         <Route path='/login' element={<Login/>}/>
-//         <Route path='/register' element={<Register/>}/>
-//         <Route path='/home' element={<Home/>}/>
-//         <Route path='/expense' element={<ExpensesTracking/>}/>
-//         <Route path='/income' element={<IncomePage/>}/>
-//         <Route path='/budget' element={<BudgetAndGoals/>}/>
-//         <Route path='/dashboard' element={<Dashboard/>}/>
-//       </Routes>
-//     </div>
-//   );
-// };
+      <Routes>
+        <Route path='/' element={<LandingPage/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/expense' element={<ExpensesTracking/>}/>
+        <Route path='/income' element={<IncomePage/>}/>
+        <Route path='/budget' element={<BudgetAndGoals/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+      </Routes>
+    </div>
+  );
+};
 
-// export default App;
+export default App;
